@@ -1,0 +1,167 @@
+body,html {
+  padding: 0;
+  margin:0;
+  height:100%;
+  width:100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  position:center;
+}
+
+
+#topBar {
+	height: 75px;
+	width: 100%;
+	background: rgba(15, 51, 56, 0.9);
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*text-transform: capitalize;*/
+	font-family: sans-serif;
+	color: #FFFAFA;
+	padding: 17px;
+	font-size: 14px;
+	box-sizing: border-box;
+	cursor:pointer;
+	z-index:10;
+	border-bottom-color:#000;
+	border-bottom-style: dotted;
+	border-bottom-width: 6px;
+
+}
+
+.title {
+	font-size: 33px;
+	margin-bottom: 8px;
+}
+
+
+#about {
+	background:#46B3FE;
+	width: 70px;
+	padding: 3px;
+	text-align: center;
+	border-radius: 9px;
+	margin-bottom: 19px;
+	font-size: 14px;
+}
+
+
+.highlight {
+	background:steelblue;
+}
+
+.sideBarItem {
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+
+
+
+/*ABOUT BOX*/
+#about:hover {
+	cursor:pointer;
+	color:steelblue;
+	text-decoration:underline;
+}
+
+#mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+	background:rgba(51, 51, 51, 0.87);
+  z-index: 10;
+  display:none;
+}
+
+.popup {
+  top: 20%;
+  width: 65%;
+  position: fixed;
+  left: 55%;
+  margin: 0 0 0 -37.5%;
+  z-index: 9999;
+  background: #fff;
+  min-height: 180px;
+  border-radius: 16px;
+  padding: 35px;
+  display:none;
+}
+
+.popup h2 {
+  font-size: 30px;
+  padding-bottom: 16px;
+  margin-top: 0;
+  color: black;
+}
+
+.popup p {
+  line-height: 22px;
+  margin-bottom:10px;
+  color: #777;
+}
+
+.popup h3 {
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.popup .close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 24px;
+}
+
+.popup .close:hover {
+	cursor:pointer;
+	color: #E10000;
+}
+
+
+/*LEGEND, GENERAL*/
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 95px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+/*Choro LEGEND*/
+.choroLegend {
+    line-height: 24px;
+    color: #555;
+}
+.choroLegend i {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/*year LEGEND*/
+.yearLegend {
+    line-height: 24px;
+    color: #555;
+}
+.yearLegend i {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+    border-radius: 12px;
+}
